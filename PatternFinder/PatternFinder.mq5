@@ -17,7 +17,6 @@
    double input Psim = 0.7;
    ENUM_APPLIED_PRICE input price_ = PRICE_OPEN;
    ENUM_MA_METHOD input MAmethod = MODE_SMA;
-   int Report_Handle;
    
 int OnInit()
   {
