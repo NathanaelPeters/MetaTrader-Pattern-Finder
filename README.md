@@ -71,7 +71,7 @@ In order to access these arrays as efficiently as possible in MQL5 I made functi
 However, manually writing these functions became time consuming even with copy+paste. So I made a python script that would not only create these MQL5 functions (FilterMaker.mq5), it would also make calculate the unit norm of the array. In order to compare both arrays, the array I created and an FX chart, I would need to find the unit normalized vector of both arrays. 
 
 For the array I created the python file (FilterMaker.mq5) the code for calculating the unit norm is:
-    <pre>
+
     Sum = 0
     for i in range(30):
       Sum += n[i]
@@ -93,10 +93,7 @@ For the array I created the python file (FilterMaker.mq5) the code for calculati
         </pre>
      Where Open is an array with a length of 30  
      and period is an input depending on which chart you want to look at (5 mins/10 mins/15 mins/30 mins/1 hour/4 hours... etc)  
-       
-   Then, to find the unit normalized vector:
-   <pre>
-   double sum = 0;
+<pre>
    for(int i=0; i<ArraySize(Open); i++) {
       sum += Open[i];
    }
