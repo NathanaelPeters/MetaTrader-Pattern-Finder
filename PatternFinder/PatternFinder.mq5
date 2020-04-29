@@ -10,7 +10,6 @@
 //| Expert initialization function                                   |
 //+------------------------------------------------------------------+
    #include "DoubleTopArrays.mq5"
-   string FileName = "FoundtoText";
 
    string Pairs[12] = {"EURUSD", "GBPUSD", "USDCHF", "USDJPY", "USDCAD", "AUDUSD", "NZDUSD", "AUDCAD", "CADCHF", "EURCAD", "GBPCAD", "NZDCAD"};
    ENUM_TIMEFRAMES Times[7] = {PERIOD_M30, PERIOD_H1, PERIOD_H4, PERIOD_H8, PERIOD_D1, PERIOD_W1};
@@ -54,11 +53,7 @@ int OnInit()
                fout[k] += Open[m]*FiltersDT[k][m];
            }
            if(fout[k] >=Psim || fout[k] <= -Psim) {
-               cnt++;
                Alert(Pairs[i], " ", EnumToString(Times[n]), " count: ", cnt, " ", TimeCurrent(), " Filter", (k+5), " fout: ", fout[k]);
-               string text = "Double Top on the " + Pairs[i] + " chart at " + EnumToString(Times[n]) + " at " + TimeCurrent() + "\n";
-               FileWriteString(Report_Handle, text);
-               FileFlush(Report_Handle);
            }
         }
      
@@ -111,11 +106,7 @@ void OnTimer()
                fout[k] += Open[m]*FiltersDT[k][m];
            }
            if(fout[k] >=Psim || fout[k] <= -Psim) {
-               cnt++;
                Alert(Pairs[i], " ", EnumToString(Times[n]), " count: ", cnt, " ", TimeCurrent(), " Filter", (k+5), " fout: ", fout[k]);
-               string text = "Double Top on the " + Pairs[i] + " chart at " + EnumToString(Times[n]) + " at " + TimeCurrent() + "\n";
-               FileWriteString(Report_Handle, text);
-               FileFlush(Report_Handle);
            }
         }
      
