@@ -11,15 +11,6 @@
 //+------------------------------------------------------------------+
 
    #include "DoubleTopArrays.mq5"
-
-//---
-   string Feb25_230 = "2020.02.25 15:00:00";
-   string Feb25_130 = "2020.02.25 13:30:00";
-   datetime Jan_02 = D'2020.01.02 06:00:00';
-   datetime  StringToTime(
-     string Feb25_000      // date string
-   );
-  
   
    double input Psim = 0.7;
    int input avgbar = 30;
@@ -29,10 +20,6 @@
    ENUM_MA_METHOD input MAmethod = MODE_SMA;
 
    double High[],Low[],Open[],Close[],Hist_MA[];
-//   double Open1 = CopyOpen(Symbol(), period, 0, avgbar, Open);
-//   double Close1 = CopyClose(Symbol(), period, 0, avgbar, Close);
-//  double High1 = CopyHigh(Symbol(), period, 0, avgbar, High);
-//   double Low1 = CopyLow(Symbol(), period, 0, avgbar, Low);
 
 //---- arrays for indicators
    double      MA[];                // array for the indicator iMA
@@ -143,55 +130,11 @@ void OnTimer()
 //         fout[k] += Hist_MA[i]*Filters[k][i];
            fout[k] += Open[i]*FiltersDT[k][i];
       }
-      if(TimeCurrent() > Jan_02) {
          if(fout[k] >=Psim || fout[k] <= -Psim) {
             count++;
-            Alert("count: ", count, " ", TimeCurrent()-(30*PeriodSeconds(period)), " Filter", (k+5), " Fout: ", fout[k]);
-//             Print("HIST_MA");
-//             ArrayPrint(Hist_MA);
-//             Print("FILTER:");
-//             ArrayPrint(Filter12);  
+            Alert("count: ", count, " ", TimeCurrent()-(30*PeriodSeconds(period)), " Filter", (k+5), " Fout: ", fout[k]); 
          }
-      }
    }
-   
-
-//  if(Feb25_230 >= TimeCurrent() && Feb25_130<= TimeCurrent())
-//  {
-//      Alert("Filter8: ");
-//      ArrayPrint(Filter8, WHOLE_ARRAY);
-//      Alert("Open: ");
-//      ArrayPrint(Open, WHOLE_ARRAY);
-//      Alert("Hist_MA: ");
-//      ArrayPrint(Hist_MA, WHOLE_ARRAY);
-//   } 
-  
    EventSetTimer(PeriodSeconds(period));
-   
-   
   }
 
-//+------------------------------------------------------------------+
-//| Tester function                                                  |
-//+------------------------------------------------------------------+
-double OnTester()
-  {
-//---
-   double ret=0.0;
-//---
-
-//---
-   return(ret);
-  }
-//+------------------------------------------------------------------+
-//| ChartEvent function                                              |
-//+------------------------------------------------------------------+
-void OnChartEvent(const int id,
-                  const long &lparam,
-                  const double &dparam,
-                  const string &sparam)
-  {
-//---
-   
-  }
-//+------------------------------------------------------------------+
