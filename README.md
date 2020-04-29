@@ -149,13 +149,9 @@ The FilterMaker's function that it outputs would now look like this, having been
      Filter5[29] = -0.0488; //
 </pre>  
 
-
-And the unit normalized array from the FX chart would look something like this:  
-`[-0.10492, 0.47852, 0.10126, 0.24602, -0.09834, -0.20362, 0.00695, 0.03985, -0.06763, -0.12246, 0.15390, -0.10272, -0.12466, -0.19704, -0.19046, -0.25187, -0.05447, 0.01353, -0.02595, -0.01937, -0.03034,  0.34472,  0.17583,  0.08152, 0.14951, -0.02815, -0.27819, -0.08737, -0.16633, 0.36227]`  
-(Note: above array taken from a random chart)  
-
-Then the sum of multiplying all of the Array#s by the FX chart we get a Psim or Pattern Similarity for each Array#. The closer Psim is to 1, the more closely related the chart is with a double-top array.  
-In my file I have Psim set to 0.7 before it sends an alert with which currency pair and which chart.
+HELLO 
+WHAT
+THANKS
 
 
    
