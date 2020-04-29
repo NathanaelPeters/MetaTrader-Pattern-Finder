@@ -14,7 +14,7 @@
    string Pairs[12] = {"EURUSD", "GBPUSD", "USDCHF", "USDJPY", "USDCAD", "AUDUSD", "NZDUSD", "AUDCAD", "CADCHF", "EURCAD", "GBPCAD", "NZDCAD"};
    ENUM_TIMEFRAMES Times[7] = {PERIOD_M30, PERIOD_H1, PERIOD_H4, PERIOD_H8, PERIOD_D1, PERIOD_W1};
    
-   double input Psim = 0.6;
+   double input Psim = 0.7;
    ENUM_APPLIED_PRICE input price_ = PRICE_OPEN;
    ENUM_MA_METHOD input MAmethod = MODE_SMA;
    int Report_Handle;
