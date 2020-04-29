@@ -97,10 +97,10 @@ Where \'Open\' is an array with a length of 30
 and \'period\' is an input depending on which chart you want to look at (5 mins/10 mins/15 mins/30 mins/1 hour/4 hours... etc)  
 
 Then to calculate the FX chart's unit norm:  
-<pre>  
+```
   for(int i=0; i<ArraySize(Open); i++) {  
       sum += Open[i];  
-</pre>  
+```  
 Hello
 
 
