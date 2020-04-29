@@ -95,7 +95,8 @@ Where \'Open\' is an array with a length of 30
 and \'period\' is an input depending on which chart you want to look at (5 mins/10 mins/15 mins/30 mins/1 hour/4 hours... etc)  
 
 Then to calculate the FX chart's unit norm:
-   `for(int i=0; i<ArraySize(Open); i++) {
+   <pre>
+   for(int i=0; i<ArraySize(Open); i++) {
       sum += Open[i];
    }
    double ssum = 0;
@@ -106,7 +107,8 @@ Then to calculate the FX chart's unit norm:
    double norm = sqrt(ssum);
    for(int i=0; i<ArraySize(Open); i++) {
       Open[i] = Open[i]/norm;
-   }`
+   }
+   </pre>
    
 The FilterMaker's function that it outputs would now look like this, having been unit normalized: 
 
