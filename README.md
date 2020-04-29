@@ -96,9 +96,19 @@ Then, to find the unit normalized vector:
         </pre>
 Where \'Open\' is an array with a length of 30  
 and \'period\' is an input depending on which chart you want to look at (5 mins/10 mins/15 mins/30 mins/1 hour/4 hours... etc)  
+
+   ```for(int i=0; i<ArraySize(Open); i++) {
+      sum += Open[i];
+   }
+   double ssum = 0;
+   for(int i=0; i<ArraySize(Open); i++) {
+      Open[i] -= sum/ArraySize(Open);
+      ssum += Open[i]*Open[i];
+   }
+   double norm = sqrt(ssum);
+   for(int i=0; i<ArraySize(Open); i++) {
+      Open[i] = Open[i]/norm;
+   }
   
-HELLO  
-UMM  
-Thanks  
 
    
