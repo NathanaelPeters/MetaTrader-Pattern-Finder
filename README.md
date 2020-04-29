@@ -17,7 +17,7 @@ y
 
 or:  
   
-*  `[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0]`  
+\   `[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0]`  
 
 It was then I realized that the shape was too specific. I had to create more arrays with different amount of space between the 'ears':
 y            Array5                y            Array6              y           Array7               y             Array8
