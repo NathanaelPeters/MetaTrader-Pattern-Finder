@@ -12,7 +12,7 @@ So how could I find these patterns? To start made arrays with coordinates that I
 y  
 |  
 |  
-|\____________________/\\\_\__\__/\\\_  
+|\____________________/\\\_\_\_\_\_/\\\_  
 |\______________________________ x  
 
 or:
