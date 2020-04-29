@@ -89,11 +89,9 @@ Then, to find the unit normalized vector:
   For the array of the FX chart:
   Firstly, you must turn the open/close/high/low chart into an array:
     <pre>
-      `   ArrayResize(Open, 30);
+        ```ArrayResize(Open, 30);
           ArrayFill(Open,0,30,0);
           double Open1 = CopyOpen(Symbol(), period, 1, 30, Open);
-          `
-        </pre>
 Where \'Open\' is an array with a length of 30  
 and \'period\' is an input depending on which chart you want to look at (5 mins/10 mins/15 mins/30 mins/1 hour/4 hours... etc)  
 
