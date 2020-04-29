@@ -88,6 +88,7 @@ Then, to find the unit normalized vector:
      </pre>
   For the array of the FX chart, it must be done in MQL5:
   Firstly, you must turn the open/close/high/low chart into an array:
+  
           ArrayResize(Open, 30);
           ArrayFill(Open,0,30,0);
           double Open1 = CopyOpen(Symbol(), period, 1, 30, Open);
