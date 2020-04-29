@@ -7,13 +7,13 @@ n.append(0) #2
 n.append(0) #3 
 n.append(0) #4
 n.append(0) #5 
-n.append(1.5) #6 
+n.append(1) #6 
 n.append(0) #7 
 n.append(0) #8 
 n.append(0) #9 
 n.append(0) #10 
 n.append(0) #11 
-n.append(1) #12 
+n.append(0) #12 
 n.append(0) #13
 n.append(0) #14 
 n.append(0) #15 
@@ -32,7 +32,6 @@ n.append(0) #27
 n.append(0) #28
 n.append(0) #29
 
-#n= [29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]
 def FilterMaker(n,index):
     Sum = 0
     for i in range(30):
@@ -59,6 +58,6 @@ def FilterMaker(n,index):
         print ("Sum === !0")
 
 
-FilterMaker(n,"5x5")
+FilterMaker(n,"5")
 
 
