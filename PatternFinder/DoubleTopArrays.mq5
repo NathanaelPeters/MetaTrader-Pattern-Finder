@@ -35,9 +35,6 @@ void SpecifyArraysDT () {
    ArraySpecify18(Filter18);
    ArraySpecify19(Filter19);
    ArraySpecify20(Filter20);
-//   ArraySpecify21(Filter21);
-
-
 
 //-------
 }
@@ -743,7 +740,6 @@ for(int i=0; i<30; i++) {
       }
       fnum+=1;
    }
-
 
 //--------------------------------------------------------------+
 //| Expert tick function                                             |
