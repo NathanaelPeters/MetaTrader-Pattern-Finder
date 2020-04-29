@@ -15,7 +15,7 @@ y
 |\____________________/\\\_\_\_\_\_/\\\_  
 |\______________________________ x  
 
-or:
+or:  
 `[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0]`
 
 It was then I realized that the shape was too specific. I had to create more arrays with different amount of space between the 'ears':
