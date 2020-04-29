@@ -114,43 +114,40 @@ Then to calculate the FX chart's unit norm:
    
 The FilterMaker's function that it outputs would now look like this, having been unit normalized: 
 <pre>
-void ArraySpecify5 (double &Filter5[]){
-ArrayResize(Filter5, 30);
-ArrayFill(Filter5,0,30,0);
- Filter5[0] = -0.0488; //
- Filter5[1] = 0.6831; //
- Filter5[2] = -0.0488; //
- Filter5[3] = -0.0488; //
- Filter5[4] = -0.0488; //
- Filter5[5] = -0.0488; //
- Filter5[6] = -0.0488; //
- Filter5[7] = 0.6831; //
- Filter5[8] = -0.0488; //
- Filter5[9] = -0.0488; //
- Filter5[10] = -0.0488; //
- Filter5[11] = -0.0488; //
- Filter5[12] = -0.0488; //
- Filter5[13] = -0.0488; //
- Filter5[14] = -0.0488; //
- Filter5[15] = -0.0488; //
- Filter5[16] = -0.0488; //
- Filter5[17] = -0.0488; //
- Filter5[18] = -0.0488; //
- Filter5[19] = -0.0488; //
- Filter5[20] = -0.0488; //
- Filter5[21] = -0.0488; //
- Filter5[22] = -0.0488; //
- Filter5[23] = -0.0488; //
- Filter5[24] = -0.0488; //
- Filter5[25] = -0.0488; //
- Filter5[26] = -0.0488; //
- Filter5[27] = -0.0488; //
- Filter5[28] = -0.0488; //
- Filter5[29] = -0.0488; //
-for(int i=0; i<30; i++) {
-         FiltersDT[fnum][i]=Filter5[i];
-      }
-      fnum+=1;</pre>
+    void ArraySpecify5 (double &Filter5[]){
+    ArrayResize(Filter5, 30);
+    ArrayFill(Filter5,0,30,0);
+     Filter5[0] = -0.0488; //
+     Filter5[1] = 0.6831; //
+     Filter5[2] = -0.0488; //
+     Filter5[3] = -0.0488; //
+     Filter5[4] = -0.0488; //
+     Filter5[5] = -0.0488; //
+     Filter5[6] = -0.0488; //
+     Filter5[7] = 0.6831; //
+     Filter5[8] = -0.0488; //
+     Filter5[9] = -0.0488; //
+     Filter5[10] = -0.0488; //
+     Filter5[11] = -0.0488; //
+     Filter5[12] = -0.0488; //
+     Filter5[13] = -0.0488; //
+     Filter5[14] = -0.0488; //
+     Filter5[15] = -0.0488; //
+     Filter5[16] = -0.0488; //
+     Filter5[17] = -0.0488; //
+     Filter5[18] = -0.0488; //
+     Filter5[19] = -0.0488; //
+     Filter5[20] = -0.0488; //
+     Filter5[21] = -0.0488; //
+     Filter5[22] = -0.0488; //
+     Filter5[23] = -0.0488; //
+     Filter5[24] = -0.0488; //
+     Filter5[25] = -0.0488; //
+     Filter5[26] = -0.0488; //
+     Filter5[27] = -0.0488; //
+     Filter5[28] = -0.0488; //
+     Filter5[29] = -0.0488; //
+</pre>  
 
 
 And the unit normalized array from the FX chart would look something like this:  
