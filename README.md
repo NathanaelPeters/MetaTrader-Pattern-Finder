@@ -9,11 +9,11 @@ From my previous bot, I gained some experience with MQL5 and decided to keep usi
 
 So how could I find these patterns? To start made arrays with coordinates that I thought fit in with a double top shape. 
 
-y
-|
-|
-|____________________/\_____/\_
-|______________________________ x
+y  
+|  
+|  
+|____________________/\_____/\_  
+|______________________________ x  
 
 or:
 `[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0]`
