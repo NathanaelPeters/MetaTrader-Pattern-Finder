@@ -92,6 +92,7 @@ Then, to find the unit normalized vector:
           ArrayResize(Open, 30);
           ArrayFill(Open,0,30,0);
           double Open1 = CopyOpen(Symbol(), period, 1, 30, Open);
+          
 Where \'Open\' is an array with a length of 30  
 and \'period\' is an input depending on which chart you want to look at (5 mins/10 mins/15 mins/30 mins/1 hour/4 hours... etc)  
 
@@ -113,7 +114,7 @@ Then to calculate the FX chart's unit norm:
    
 The FilterMaker's function that it outputs would now look like this, having been unit normalized: 
 
-<pre>
+`
 void ArraySpecify5 (double &Filter5[]){
 ArrayResize(Filter5, 30);
 ArrayFill(Filter5,0,30,0);
@@ -150,9 +151,8 @@ ArrayFill(Filter5,0,30,0);
 for(int i=0; i<30; i++) {
          FiltersDT[fnum][i]=Filter5[i];
       }
-      fnum+=1;
-   }
-</pre>
+      fnum+=1;`
+
 
 And the unit normalized array from the FX chart would look something like this:  
 `[-0.10492, 0.47852, 0.10126, 0.24602, -0.09834, -0.20362, 0.00695, 0.03985, -0.06763, -0.12246, 0.15390, -0.10272, -0.12466, -0.19704, -0.19046, -0.25187, -0.05447, 0.01353, -0.02595, -0.01937, -0.03034,  0.34472,  0.17583,  0.08152, 0.14951, -0.02815, -0.27819, -0.08737, -0.16633, 0.36227]`  
