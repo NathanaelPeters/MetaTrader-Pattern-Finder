@@ -93,7 +93,7 @@ However, manually writing these functions became time consuming even with copy+p
      Where Open is an array with a length of 30  
      and period is an input depending on which chart you want to look at (5 mins/10 mins/15 mins/30 mins/1 hour/4 hours... etc)  
        
-     Then, to find the unit normalized vector:
+   Then, to find the unit normalized vector:
    <pre>    
    double sum = 0;
    for(int i=0; i<ArraySize(Open); i++) {
